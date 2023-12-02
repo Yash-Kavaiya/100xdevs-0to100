@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerodha</title>
+   <script>
+    document.getElementById('interestForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get values from the form
+      const amount = parseFloat(document.getElementById('amount').value);
+      const rate = parseFloat(document.getElementById('rate').value);
+      const years = parseInt(document.getElementById('years').value);
+
+      // Calculate interest
+      const interest = (amount * rate * years) / 100;
+
+      // Display the result
+      document.getElementById('interestResult').textContent = `Interest after ${years} years at ${rate}% interest rate: $${interest.toFixed(2)}`;
+      document.getElementById('result').style.display = 'block';
+    });
+  </script>
+
+
+
+</head>
+<body>
+  
+<link rel="stylesheet" href="https://zerodha.com/static/css/bundle.min.css">
+<script type="text/javascript" src="/static/js/tinytabs.min.js"></script>
+<script type="text/javascript" src="/static/js/tooltip.js"></script>
+<script type="text/javascript" src="https://zerodha.com/zerodha.referral.js"></script>
+<script type="text/javascript" src="/static/js/navbar.js"></script>
+<nav class="navbar">
+    <div class="container">
+      <div class="nav-responsive row between">
+        <div class="relative-section five columns">
+          <a href="/">
+            <img class="logo-img" src="https://zerodha.com/static/images/logo.svg" alt="Zerodha logo" />
+          </a>
+        </div>
+        <div class="nav-active seven columns" role="navigation" aria-label="main navigation">
+          <ul class="navbar-links">
+            <li class="hide-on-small">
+              <a href="https://signup.zerodha.com">Signup</a>
+            </li>
+            <li class="hide-on-small">
+              <a class="nav-links" href="https://zerodha.com/about/">About</a>
+            </li>
+            <li class="hide-on-small">
+              <a class="nav-links" href="https://zerodha.com/products/">Products</a>
+            </li>
+            <li class="hide-on-small">
+              <a class="nav-links" href="https://zerodha.com/pricing/">Pricing</a>
+            </li>
+            <li class="hide-on-small">
+              <a href="https://support.zerodha.com">Support</a>
+            </li>
+            <!-- <li class="hide-on-small signup-link">
+                <a class="nav-links" id="nav_acop" href="https://zerodha.com/open-account/">Sign up</a>
+              </li> -->
+              <li id="navbar_menu">
+              <div class="cursor-pointer" id="menu_btn" title="Menu">
+                <div id="nav-icon3">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div id="menu" class="navbar-menu text-left">
+                <ul class="navbar-links show-on-mobile">
+                  <li class="nav-links">
+                    <a href="https://signup.zerodha.com">Signup</a>
+                  </li>
+                  <li class="hide-on-small">
+                    <a class="nav-links" id="nav_acop" href="https://zerodha.com/open-account/">Open account</a>
+                  </li>
+                  <li>
+                    <a class="nav-links" href="https://zerodha.com/about/">About</a>
+                  </li>
+                  <li>
+                    <a class="nav-links" href="https://zerodha.com/products/">Products</a>
+                  </li>
+                  <li>
+                    <a class="nav-links" href="https://zerodha.com/pricing/">Pricing</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://support.zerodha.com">Support</a>
+                  </li>
+                </ul>
+                <div class="row between v-align products-list">
+                  <div class="three columns">
+                    <a class="text-center" href="https:&#x2F;&#x2F;kite.zerodha.com">
+                      <img src="/static/images/products/kite-logo.svg" /><br class="hide-on-mobile" />
+                      <span>
+                        <strong>Kite</strong>
+                      </span>
+                      <br class="hide-on-small">
+                      <span class="text-light-grey text-12 hide-on-small">
+                        Trading platform
+                      </span>
+                    </a>
+                  </div>
+                  <div class="three columns">
+                    <a class="text-center" href="https:&#x2F;&#x2F;console.zerodha.com">
+                      <img src="/static/images/products/console.svg" /><br class="hide-on-mobile" />
+                      <span>
+                        <strong>Console</strong>
+                      </span>
+                      <br class="hide-on-small">
+                      <span class="text-light-grey text-12 hide-on-small">
+                        Backoffice
+                      </span>
+                    </a>
+                  </div>
+                  <div class="three columns">
+                    <a class="text-center" href="https://kite.trade">
+                      <img src="/static/images/products/kite-connect.svg" /><br class="hide-on-mobile" />
+                      <span>
+                        <strong>Kite Connect</strong>
+                      </span>
+                      <br class="hide-on-small">
+                      <span class="text-light-grey text-12 hide-on-small">
+                        Trading APIs
+                      </span>
+                    </a>
+                  </div>
+                  <div class="three columns">
+                    <a class="text-center" href="https://coin.zerodha.com">
+                      <img src="/static/images/products/coin.svg" /><br class="hide-on-mobile" />
+                      <span>
+                        <strong>Coin</strong>
+                      </span>
+                      <br class="hide-on-small">
+                      <span class="text-light-grey text-12 hide-on-small">
+                        Mutual funds
+                      </span>
+                    </a>
+                  </div>
+                  <div class="three columns show-on-mobile">
+                    <a href="https://zerodha.com/varsity/" class="text-center">
+                      <img class="nav-edu-img" src="/static/images/products/varsity.png" /><br />
+                      <span><strong>Varsity</strong></span>
+                    </a>
+                  </div>
+                  <div class="three columns show-on-mobile">
+                    <a href="https://tradingqna.com/" class="text-center">
+                      <img class="nav-edu-img" src="/static/images/products/tqna.png" /><br />
+                      <span><strong>Trading Q&amp;A</strong></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="menu-footer">
+                  <div class="row between">
+                    <div class="seven columns">
+                      <div class="row between">
+                        <div class="six columns">
+                          <p><strong>Utilities</strong></p>
+                          <a href="https://zerodha.com/brokerage-calculator/">Brokerage calculator</a>
+                          <a href="https://zerodha.com/margin-calculator/">Margin calculator</a>
+                          <a href="https://zerodha.com/marketintel/holiday-calendar/">Holiday calendar</a>
+                        </div>
+                        <div class="six columns">
+                          <p><strong>Updates</strong></p>
+                          <a href="https://zerodha.com/z-connect/">Z-Connect blog</a>
+                          <a href="https://pulse.zerodha.com/">Pulse News</a>
+                          <a href="https://zerodha.com/marketintel/bulletin/">Circulars / Bulletin</a>
+                          <a href="https://zerodha.com/ipo/">IPOs</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="five columns education hide-on-small">
+                      <p><strong>Education</strong></p>
+                      <a href="https://zerodha.com/varsity/" class="text-center">
+                        <img src="/static/images/products/varsity.png" /><br />
+                        <span>Varsity</span>
+                      </a>
+                      <a href="https://tradingqna.com/" class="text-center">
+                        <img src="/static/images/products/tqna.png" /><br />
+                        <span>Trading Q&amp;A</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="show-on-mobile nav-mobile-signup">
+                  <!-- <a href="https://zerodha.com/open-account/">Sign up <i class="icon icon-arrow-right"></i></a> -->
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- nav items //-->
+      </div>
+    </div>
+  </nav>
+<img class="nav-edu-img" src="https://zerodha.com/static/images/landing.png" />
+
+    <section class="text-center landing">
+      <div class="container">
+        <img class="landing-image" src="/static/images/landing.png" alt="Zerodha, no. 1 stock broker in India" />
+        <h1 class="landing-heading text-center">Invest in everything</h1>
+        <h5 class="landing-subheading text-center">
+          Online platform to invest in stocks, derivatives, mutual funds, and more
+        </h5>
+        <a href="/open-account" class="button" id="acop_link">Sign up now</a>
+      </div>
+    </section>
+    
+<div style="margin : 10px 400px"
+<h2>Interest Calculator</h2>
+  <form id="interestForm">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" required><br><br>
+
+    <label for="rate">Rate of Interest:</label>
+    <input type="number" step="0.01" id="rate" name="rate" placeholder="Enter rate of interest" required><br><br>
+
+    <label for="years">Years:</label>
+    <input type="number" id="years" name="years" placeholder="Enter number of years" required><br><br>
+
+    <button type="submit">Calculate Interest</button>
+  </form>
+<div id="result" style="display: none;">
+    <h3>Result:</h3>
+    <p id="interestResult"></p>
+</div>
+
+</body>
+</html>
