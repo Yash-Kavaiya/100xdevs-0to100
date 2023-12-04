@@ -38,7 +38,6 @@ Certainly! Here's a comparison table highlighting some key differences between c
 |------------------------|----------------------------------------------|----------------------------------------------|
 |   -                     | First need to complie ,then need to run         | Usually go line by line   |
 | -                      | Usually don't compile if there is an error in the code          | Can run partially if the error comes later     |
-
 | **Execution Process**  | Entire source code is compiled into          | Source code is read line-by-line and         |
 |                        | machine code before execution.               | translated into machine code in real-time.   |
 | **Output**             | Produces standalone executable files         | Does not produce standalone executable files;|
