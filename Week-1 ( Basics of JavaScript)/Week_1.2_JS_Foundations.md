@@ -25,9 +25,9 @@ Programming languages serve as a bridge between human understanding and machine 
 #### What is Complier 
 A compiler is a specialized program that translates source code written in a high-level programming language into machine code or executable code that a computer can understand and execute directly.
 
-Step 1:- write code
-Step 2:- Complile code
-Step 3 :- Run the code (put it in ram)
+- Step 1:- write code
+- Step 2:- Complile code
+- Step 3 :- Run the code (put it in ram)
 
 #### What is Interprter
 Interpreted languages are programming languages where the source code is directly executed line-by-line by an interpreter without the need for a separate compilation step. Instead of compiling the entire code into machine code before execution (as in compiled languages), an interpreter reads and executes the code statement by statement in real-time.
@@ -53,3 +53,5 @@ Certainly! Here's a comparison table highlighting some key differences between c
 | **Development Speed**  | Longer compilation times,                    | Shorter development cycles as changes in    |
 |                        | but potentially faster execution.            | code can be executed immediately.           |
 | **Examples**           | C, C++, Rust, Go, Swift                     | Python, JavaScript, Ruby, PHP, Perl        |
+
+
