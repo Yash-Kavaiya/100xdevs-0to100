@@ -39,7 +39,6 @@ Certainly! Here's a comparison table highlighting some key differences between c
 |   -                     | First need to complie ,then need to run         | Usually go line by line   |
 | -                      | Usually don't compile if there is an error in the code          | Can run partially if the error comes later     |
 | **Execution Process**  | Entire source code is compiled into machine code before execution.         | Source code is read line-by-line and translated into machine code in real-time.         |
-
 | **Output**             | Produces standalone executable files  or libraries.          | Does not produce standalone executable files; code executed through an interpreter.    |
 | **Performance**        | Generally faster execution since code  is pre-compiled into machine code.      | May have slightly slower execution due to on-the-fly translation.   |
 | **Portability**        | Executable files might be platform-specific and might require recompilation for  different systems. | More portable as the interpreter can run on various platforms without recompilation.   |
