@@ -89,3 +89,88 @@ JavaScript is known for its single-threaded nature, meaning it has only one call
 - Blocking Code: Long-running operations can block the main thread, leading to performance issues and unresponsiveness.
 - Synchronization: Dealing with shared resources in a single-threaded environment requires careful management to prevent race conditions and maintain data integrity.
 
+#### JS can only one of these at a time It is single threaded. This is why it is considered to be a bad language for scalable systems.There is a way to make it use all cores of your machine.
+
+## Simple Primitives
+
+Certainly! I'll explain the different variable declarations (`var`, `let`, `const`), data types (strings, numbers, booleans), and control flow structures (`if`/`else` statements and `for` loops) in JavaScript.
+
+### Variable Declarations: `var`, `let`, `const`
+
+#### `var`:
+- Declares a variable globally scoped or function scoped.
+- Variables declared with `var` can be re-declared and updated.
+- They are hoisted to the top of their scope during execution.
+
+#### `let`:
+- Introduces block-scoped variables.
+- Allows the variable to be reassigned but not re-declared in the same scope.
+- Does not get hoisted to the top of the scope, unlike `var`.
+
+#### `const`:
+- Declares a constant block-scoped variable.
+- The value of a `const` cannot be reassigned once it is initialized.
+- It does not allow re-declaration or reassignment.
+
+### Data Types: Strings, Numbers, Booleans
+
+#### Strings:
+- Represents textual data enclosed in single or double quotes.
+- Example: `let greeting = 'Hello';`
+
+#### Numbers:
+- Represents numeric values, including integers and floating-point numbers.
+- Example: `let count = 10;`
+
+#### Booleans:
+- Represents a logical value, either `true` or `false`.
+- Often used in conditional statements.
+- Example: `let isTrue = true;`
+
+### Control Flow: `if`/`else` Statements and `for` Loops
+
+#### `if`/`else` Statements:
+- Used for conditional execution based on a condition's evaluation.
+- Syntax:
+  ```javascript
+  if (condition) {
+    // Code to execute if condition is true
+  } else {
+    // Code to execute if condition is false
+  }
+  ```
+
+#### `for` Loops:
+- Used for iterating over a block of code multiple times.
+- Syntax:
+  ```javascript
+  for (initialization; condition; iteration) {
+    // Code block to be executed
+  }
+  ```
+  - `initialization`: Executes once before the loop starts.
+  - `condition`: Checked before every iteration. If false, the loop stops.
+  - `iteration`: Executed at the end of each iteration.
+
+### Example:
+
+```javascript
+// Variable declarations
+let name = 'Alice';
+var age = 25;
+const isStudent = true;
+
+// Conditional statement
+if (age >= 18) {
+  console.log(`${name} is an adult.`);
+} else {
+  console.log(`${name} is a minor.`);
+}
+
+// For loop example
+for (let i = 0; i < 5; i++) {
+  console.log(i); // Outputs numbers from 0 to 4
+}
+```
+
+These JavaScript fundamentals - variable declarations, data types, conditional statements (`if`/`else`), and loops (`for` loops) - are foundational concepts used extensively in JavaScript programming to create logic, manipulate data, and control the flow of execution within programs.
