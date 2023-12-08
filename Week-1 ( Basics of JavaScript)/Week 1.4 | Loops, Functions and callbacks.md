@@ -145,3 +145,31 @@ Variables declared inside a function are typically only accessible within that f
 Closures allow functions to retain access to variables from their containing (enclosing) scope even after the outer function has finished executing.
 
 Understanding functions in JavaScript is crucial for building applications, as they are fundamental building blocks of the language and play a significant role in structuring and organizing code.
+
+# Callback Functions
+Step 1 - Can you call one function inside another function?
+Yes, you can call one function inside another function in JavaScript. This is a common practice and allows for better code organization and reusability. Functions can call other functions either by directly invoking them or by returning them as values and then invoking the returned function.
+
+Here's an example demonstrating calling one function inside another function:
+
+```javascript
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+function welcome() {
+  console.log("Welcome to our website!");
+}
+
+function greetAndWelcome(userName) {
+  greet(userName); // Calling the greet function inside greetAndWelcome
+  welcome(); // Calling the welcome function inside greetAndWelcome
+}
+
+// Calling the greetAndWelcome function
+greetAndWelcome("Alice");
+```
+
+In this example, `greetAndWelcome` is a function that calls both `greet` and `welcome`. When `greetAndWelcome("Alice")` is called, it invokes the `greet` function with the provided name (`"Alice"`) and then calls the `welcome` function to display a welcome message.
+
+Calling functions inside other functions is a powerful way to organize code and create modular and reusable pieces of functionality.
