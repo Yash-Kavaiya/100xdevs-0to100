@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google-themed Scientific Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .google-red {
+      background-color: #DB4437;
+      color: #ffffff;
+    }
+
+    .google-blue {
+      background-color: #4285F4;
+      color: #ffffff;
+    }
+
+    .google-yellow {
+      background-color: #F4B400;
+      color: #ffffff;
+    }
+
+    .google-green {
+      background-color: #0F9D58;
+      color: #ffffff;
+    }
+
+    .google-red:hover {
+      background-color: #C53929;
+    }
+
+    .google-blue:hover {
+      background-color: #3367D6;
+    }
+
+    .google-yellow:hover {
+      background-color: #E1A800;
+    }
+
+    .google-green:hover {
+      background-color: #0B8043;
+    }
+
+    .google-red:focus {
+      background-color: #9A2617;
+    }
+
+    .google-blue:focus {
+      background-color: #1A5EBF;
+    }
+
+    .google-yellow:focus {
+      background-color: #BA8E00;
+    }
+
+    .google-green:focus {
+      background-color: #0A6140;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-200 h-screen flex justify-center items-center">
+  <div class="calculator bg-white rounded-lg p-8">
+    <h1 class="text-4xl font-bold mb-4">Google-themed Calculator</h1>
+    <input type="text" id="display" class="w-full mb-4 p-2 text-right rounded border border-gray-300" disabled>
+    <div class="grid grid-cols-4 gap-4">
+      <!-- Buttons using Google's colors -->
+      <button class="btn google-red p-2 rounded" onclick="clearDisplay()">C</button>
+      <button class="btn google-blue p-2 rounded" onclick="appendToDisplay('^')">^</button>
+      <button class="btn google-yellow p-2 rounded" onclick="appendToDisplay('%')">%</button>
+      <button class="btn google-red p-2 rounded" onclick="appendToDisplay('/')">/</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('7')">7</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('8')">8</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('9')">9</button>
+      <button class="btn google-red p-2 rounded" onclick="appendToDisplay('*')">*</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('4')">4</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('5')">5</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('6')">6</button>
+      <button class="btn google-red p-2 rounded" onclick="appendToDisplay('-')">-</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('1')">1</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('2')">2</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('3')">3</button>
+      <button class="btn google-red p-2 rounded" onclick="appendToDisplay('+')">+</button>
+      <button class="btn google-green p-2 rounded col-span-2" onclick="appendToDisplay('0')">0</button>
+      <button class="btn google-green p-2 rounded" onclick="appendToDisplay('.')">.</button>
+      <button class="btn google-blue p-2 rounded col-span-2" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function calculate() {
+      const display = document.getElementById('display');
+      try {
+        display.value = eval(display.value);
+      } catch (e) {
+        display.value = 'Error';
+      }
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+  </script>
+</body>
+
+</html>
