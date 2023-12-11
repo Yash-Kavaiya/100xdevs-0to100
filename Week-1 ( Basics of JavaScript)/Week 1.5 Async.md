@@ -97,3 +97,67 @@ JavaScript achieves delegation and context switching through these asynchronous 
 - setTimeout
 - fs.readFile - to read a file from your filesystem
 - Fetch - to fetch some data from an API endpoint
+
+`
+const fs = require('fs');
+
+fs.readFile("a.txt", "utf-8", function(err, data) {
+  console.log(data);
+})
+;
+`
+# Promises
+
+Promises are syntactical sugar that make this code slightly more readable
+
+How can we create an asynchronous function of our own?
+It is just a wrapper on top of another async function, 
+which is fine. 
+Usually all async functions you will write will be on top of 
+JS provided async functions like setTimeout or fs.readFile
+
+You can create your own asynchronous function in JavaScript using the `async` and `await` keywords. These keywords were introduced in ECMAScript 2017 (ES8) and provide a more straightforward way to work with asynchronous code by making it look synchronous.
+
+Here's an example of creating an asynchronous function:
+
+```javascript
+// Using async function to create an asynchronous function
+async function myAsyncFunction() {
+  // Asynchronous task (e.g., fetching data from an API, reading a file, etc.)
+  // This can be a Promise-based operation or function that returns a Promise
+
+  // Simulating a delay with setTimeout (asynchronous operation)
+  const result = await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Async operation completed');
+    }, 2000); // Resolves after 2 seconds
+  });
+
+  // The await keyword pauses the execution until the promise is resolved
+  return result;
+}
+
+// Using the asynchronous function
+async function executeAsyncFunction() {
+  try {
+    const asyncResult = await myAsyncFunction(); // Wait for myAsyncFunction to complete
+    console.log(asyncResult); // Output: 'Async operation completed'
+    // You can perform further operations after getting the result
+  } catch (error) {
+    console.error(error); // Handle any errors that might occur during execution
+  }
+}
+
+// Calling the function that uses the asynchronous function
+executeAsyncFunction();
+```
+
+Explanation:
+
+- The `async` keyword before the function declaration defines it as an asynchronous function, allowing the use of `await` within it.
+- Inside the `myAsyncFunction`, the `await` keyword is used to pause the execution until the asynchronous operation (in this case, a `setTimeout` wrapped in a Promise) is completed.
+- `await` can only be used within an `async` function and is used to wait for a Promise to resolve. It makes asynchronous code look and behave more like synchronous code.
+- You can then use `try...catch` blocks to handle both resolved values and errors from asynchronous operations in a synchronous-style manner.
+
+What even is a promise? 
+It is just a class that makes callbacks and async functions slightly more readabl
