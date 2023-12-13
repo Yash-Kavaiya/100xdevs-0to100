@@ -141,3 +141,7 @@ What are the common status codes the backend responds with?
 ## Library that we are using - Express
 
 https://expressjs.com/en/starter/hello-world.html
+
+Create a simple express server
+
+Notes:- https://quickest-juniper-f9c.notion.site/2-NodeJS-and-ExpressJS-concepts-bd3a6a6cd1c64764bee7865a082fa979
