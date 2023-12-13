@@ -94,5 +94,3 @@ Certainly! Here's an explanation of each of the Linux commands you've listed alo
       ```bash
       $ git init
       ```
-
-These commands are fundamental in navigating and managing files and directories in a Linux/Unix environment, as well as performing various development and system-related tasks.
