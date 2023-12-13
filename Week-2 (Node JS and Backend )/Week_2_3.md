@@ -1,6 +1,5 @@
 # Bash and Terminal
-
-Certainly! Here's an explanation of each of the Linux commands you've listed along with an example for each:
+ - terminal is nothing but another interface to do things on your machine
 
 1. **pwd (Print Working Directory):**
    - `pwd` command displays the current working directory.
