@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script>
+  function onButtonPress() {
+    const currentValue = document.getElementById("btn").innerHTML;
+    console.log(currentValue.split(" "))
+    const currentCounter = currentValue.split(" ")[1];
+    const newCounter = parseInt(currentCounter) + 1;
+    document.getElementById("btn").innerHTML = "Counter " + newCounter;
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <button onclick="onButtonPress()" id="btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Counter 0</button>
+  </body>
+
+</html>
