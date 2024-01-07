@@ -36,12 +36,12 @@ Problem with this approach
 2. As your app scales (todo app for eg), this gets
 harder and harder.
 
-State/Components/Re-rendering
-An object that represents the current state of the app
-It represents the dynamic things in your app (things that change)
+### State/Components/Re-rendering
+- An object that represents the current state of the app It represents the dynamic things in your app (things that change)
 For example, the value of the counter
 
-Components
+### Components
+
 How a DOM element should render, given a state
 It is a re-usable, dynamic, HTML snippet that changes given the state
 
@@ -49,8 +49,7 @@ A state change triggers a re-render
 A re-render represents the actual DOM being manipulated
 when the state changes
 
-You usually have to define all your components once
-And then all you have to do is update the state of your app, React takes care of re-rendering your app
+You usually have to define all your components once And then all you have to do is update the state of your app, React takes care of re-rendering your app
 
 
 
