@@ -36,6 +36,11 @@ Problem with this approach
 2. As your app scales (todo app for eg), this gets
 harder and harder.
 
+1. State
+2. Components
+
+Creators of frontend frameworks realised that all websites can effectively be divided into two parts
+
 ### State/Components/Re-rendering
 - An object that represents the current state of the app It represents the dynamic things in your app (things that change)
 For example, the value of the counter
