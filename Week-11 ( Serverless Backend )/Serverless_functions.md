@@ -71,4 +71,94 @@ You're absolutely right! Here's why serverless architecture shines in those scen
 * **Event-Driven Workloads:** Serverless functions are well-suited to event-based processing (e.g., image resizing after upload, data processing, etc.).
 * **Microservice Architectures:** A good option for breaking down larger applications into smaller, independently deployable serverless functions.
 
-**Let me know if you'd like to explore specific use cases where serverless might be a great fit, or if you'd like some potential drawbacks to keep in mind!** 
+Summary of the blog post [How Cloudflare Workers Work?](https://developers.cloudflare.com/workers/reference/how-workers-works/):
+
+**Cloudflare Workers** are serverless functions that run on Cloudflare's global network of data centers. They are similar to JavaScript code written for the browser or Node.js, but there are a few key differences:
+
+* **Isolated Environments:** Cloudflare Workers are executed in isolated environments called isolates. Isolates are lightweight and start up very quickly, which helps to improve performance. Each isolate has its own memory space, so code running in one isolate cannot affect code running in another isolate. This helps to improve security and stability.
+* **Execution Flow:** When a request is made to a Worker, it is routed to the nearest data center and then to an available isolate. The isolate then executes the `fetch()` handler, which is a function that defines how the Worker should respond to the request. The `fetch()` handler can return a Response object, which contains the data that will be sent back to the client. Once the `fetch()` handler has finished executing, the isolate may be evicted from memory, especially if resources are scarce. However, this will not happen until all of the isolate's events have been properly resolved.
+
+**In summary,** Cloudflare Workers are a type of serverless function that is designed to be fast, secure, and scalable. They are executed in isolated environments and can be used to respond to a variety of HTTP requests.
+
+**Key differences from Node.js:**
+
+* **Custom Runtime:** Cloudflare Workers don't use the Node.js runtime. Instead, they have a custom runtime environment called "V8" that is based on the V8 JavaScript engine used in Chrome and Node.js.
+* **Limited Functionality:** While similar to Node.js and browser JavaScript, Cloudflare Workers have some limitations due to their serverless nature. For example, they cannot access the DOM or the file system.
+
+
+| Feature | Isolates | Containers |
+|---|---|---|
+| **Runtime** | Shared JavaScript runtime | Individual instances of a language runtime |
+| **Overhead** | Lower overhead | Higher overhead |
+| **Security** | Secure sandbox environment | Less secure |
+| **Start up time** | Faster start up time | Slower start up time due to cold starts |
+| **Lifespan** | Not long-lived, can be evicted | Longer lifespan |
+
+### Initializing a worker
+To create and deploy your application, you can take the following steps - 
+-Initialize a worker
+```
+npm create cloudflare -- my-app
+```
+
+Select no for Do you want to deploy your application
+ 
+- Explore package.json dependencies
+```
+"wrangler": "^3.0.0"
+```
+
+Notice express is not a dependency there
+- tart the worker locally
+
+```
+npm run dev
+```
+How to return json?
+```
+export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		return Response.json({
+			message: "hi"
+		});
+	},
+};
+```
+
+Question - Where is the express code? HTTP Server?
+Cloudflare expects you to just write the logic to handle a request. 
+Creating an HTTP server on top is handled by cloudflare
+Question - How can I do routing ? 
+In express, routing is done as follows - 
+```
+import express from "express"
+const app = express();
+app.get("/route", (req, res) => {
+	// handles a get request to /route
+});
+```
+How can you do the same in the Cloudflare environment?
+```
+export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		console.log(request.body);
+		console.log(request.headers);
+		
+		if (request.method === "GET") {
+			return Response.json({
+				message: "you sent a get request"
+			});
+		} else {
+			return Response.json({
+				message: "you did not send a get request"
+			});
+		}
+	},
+};
+ ```
+💡How to get query params - https://community.cloudflare.com/t/parse-url-query-strings-with-cloudflare-workers/90286
+ 
+Cloudflare does not expect a routing library/http server out of the box. You can write a full application with just the constructs available above.
+ 
+We will eventually see how you can use other HTTP frameworks (like express) in cloudflare workers.
+ 
