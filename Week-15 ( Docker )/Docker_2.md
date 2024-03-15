@@ -1,6 +1,6 @@
 ### **What are Layers?**
 
-![Layers](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F085e8ad8-528e-47d7-8922-a23dc4016453%2Fa7018106-27d9-4833-9206-d20d05ab8a11%2FScreenshot_2024-03-10_at_1.29.42_PM.png?table=block&id=5adef147-fe82-4e9a-9e82-dbb3738b3104&cache=v2)
+
 In Docker, layers are a fundamental part of the image architecture that allows Docker to be efficient, fast, and portable. A Docker image is essentially built up from a series of layers, each representing a set of differences from the previous layer.
 
 * **Stackable Modifications:** Imagine layers as a stack of pancakes. Each pancake in the stack represents a change to the filesystem within a Docker image. These changes are the result of instructions executed within your Dockerfile.
@@ -38,6 +38,7 @@ CMD ["python3", "app.py"]
 ```
 
 Building this Dockerfile would result in something like this:
+![Layers](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F085e8ad8-528e-47d7-8922-a23dc4016453%2Fa7018106-27d9-4833-9206-d20d05ab8a11%2FScreenshot_2024-03-10_at_1.29.42_PM.png?table=block&id=5adef147-fe82-4e9a-9e82-dbb3738b3104&cache=v2)
 
 * **Layer 1: (Base)** The Ubuntu image.
 * **Layer 2:** Changes made by the `RUN` command (updating packages and installing Python).

@@ -246,6 +246,7 @@ EXPOSE 3000
 
 CMD ["node", "dist/index.js"]
 ```
+![Dokerfile](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F085e8ad8-528e-47d7-8922-a23dc4016453%2F6b0619fb-054b-4ba4-a82b-d7524c903bd8%2FScreenshot_2024-03-09_at_3.17.15_PM.png?table=block&id=47b44c7c-f5e1-44df-a90a-ee2e1b4bbbec&cache=v2)
 
 **Explanation**
 
