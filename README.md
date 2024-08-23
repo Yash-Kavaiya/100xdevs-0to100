@@ -4,4 +4,4 @@
 
 | Topics | Status |
 |-----|---------|
-| Week - 0 ( HTML+ CSS) | [x] |
+| Week - 0 ( HTML+ CSS) | [] |
