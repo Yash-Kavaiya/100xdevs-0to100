@@ -1,73 +1,127 @@
-Here's an overview of the **100xDevs Cohort 2.0** orientation, aimed to set the stage for everyone, especially beginners:
+# 100xDevs Cohort 2.0 Orientation - Overview
 
-### Key Goals for the Cohort
-1. **Master Full-Stack Development**: Build a strong foundation and understanding of how full-stack development works.
-2. **Learn Industry Standards**: Understand the practices used in top companies and startups.
-3. **Coding and Deployment Best Practices**: Write clean code and learn to deploy it effectively.
-4. **Work with Open Source Codebases**: Gain practical experience by engaging with open-source projects.
-5. **Project Building**: Create your projects, showcasing what you've learned.
-6. **GSoC and Career Preparation**: Prepare for Google Summer of Code (GSoC) and aim for job opportunities or internships in startups.
+Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the context for the journey ahead, especially for beginners. We'll go over high-level concepts, program structure, and expectations, and have an AMA session. Tomorrow, we start coding!
 
-### Suggested Commitment Levels Based on Experience
-1. **Complete Beginners (20-25 hours/week)**: 
-   - Basics in the first few classes, but it’ll get challenging by week 3.
-   - Recommended to create small peer groups for collaborative learning.
-   - Focus on building a solid foundation without worrying about advanced topics like bounties initially.
-   - Post progress to stay accountable.
+---
 
-2. **Intermediate Level (15-20 hours/week)**:
-   - For those with experience in other languages but new to the MERN stack.
-   - The workload intensifies around week 7; aim to overcome the "beginner’s rut."
-   - Focus on assignments, hard tasks, and gradually start contributing to GSoC from week 4.
-   - Share your milestones on platforms like Twitter.
+## Cohort Goals
 
-3. **Advanced Level / Cohort 1.0 Alumni (Minimal Hours Initially, then 15 hours/week)**:
-   - Comfortable with MERN; suggested focus on GSoC contributions.
-   - Skim through recorded classes as necessary; prioritize GSoC contributions.
-   - Take up bounties if time allows, but GSoC preparation is the main goal.
+1. **Master Full Stack Development**: Understand how development is done at startups and good companies.
+2. **Best Practices in Coding and Deployment**: Learn industry standards for writing and deploying code.
+3. **Hands-on with Open Source**: Apply skills through real open-source codebases.
+4. **Personal Projects**: Build unique projects from scratch.
+5. **Aim for GSoC and Internships/Jobs**: Work towards Google Summer of Code (GSoC) and securing opportunities in startups.
 
-### Actionable Steps to Get Started
-1. **Join the Community on Discord** and form sub-groups for peer support.
-2. **Set Up Access** on the course portal [100xDevs App](https://app.100xdevs.com/).
-3. **Prepare your Development Environment**: Install an IDE, set up Node.js, and review HTML/CSS basics.
-4. **Introduce Yourself** in your sub-group and share your social handles for networking.
+---
 
-### Class Structure
-1. **Weekend Zoom Classes** (7-9 PM): New or challenging concepts are introduced.
-2. **Weekly Assignments**: Given each Monday, assignments reinforce weekend concepts.
-3. **Occasional Offline Videos**: To warm up for upcoming topics.
-4. **Extra Classes**: For subgroup collaboration or additional topics like GSoC or emerging tech (Web3, AI).
+## Learning Path & Commitment Levels
 
-### Teaching Assistant (TA) Support
+### Beginner (Complete Beginner - Never Coded)
+- **Commitment**: 20-25 hours/week.
+- **Classes**: Initial weeks are manageable; expect a slight challenge by week 3.
+- **Support**: Doubt sessions provided periodically.
+- **Tips**: Focus on foundational assignments, avoid bounties early on, and aim to form small peer groups for collaborative learning.
+
+### Intermediate (Experience with Coding/DSA but New to MERN)
+- **Commitment**: 15-20 hours/week.
+- **Challenges**: Week 7 may be overwhelming; work on bridging gaps early.
+- **GSoC Preparation**: Start focusing on GSoC from week 4 by engaging with projects.
+- **Social Presence**: Share progress on platforms like Twitter to build visibility.
+
+### Advanced (Experienced with MERN / Cohort 1.0 Alumnus)
+- **Commitment**: 0 initially; 15 hours/week as you progress.
+- **Focus**: Prioritize GSoC contributions and advanced bounties. Feel free to skip initial live sessions and catch up later.
+- **Role**: Aim to lead and guide others, leveraging your experience for GSoC contributions.
+
+---
+
+## Essential Actions for Today
+
+1. **Join the Discord Channel**: Connect with peers and form sub-groups.
+2. **Access Course Videos**: Visit [100xDevs Platform](https://app.100xdevs.com/) (ensure DRM is enabled).
+3. **Install Required Tools**:
+   - IDE
+   - Node.js (optional but recommended for week 1)
+4. **Introduction**: Share your background and LinkedIn/Twitter in your sub-group.
+
+---
+
+## Class Schedule
+
+1. **Weekend Zoom Classes**: Saturdays/Sundays 7-9 PM. Focus on complex topics.
+2. **Assignments**: Weekly tasks are posted on Mondays to reinforce concepts.
+3. **Offline Videos**: Available to warm up for the upcoming week’s topics.
+4. **Special Classes**:
+   - Sub-group classes for closer guidance.
+   - Ad-hoc classes on specific topics (e.g., GSoC, web3, AI).
+
+---
+
+## Teaching Assistant (TA) Support
+
 - Each Discord sub-group has 2 dedicated TAs.
-- **Guidelines for TA Queries**: 
-   - Attempt to solve issues yourself first (Google, check docs, use ChatGPT).
-   - Ask in the group chat so others benefit; direct messages to TAs are discouraged.
+- **Ask Smart**: Google and check documentation first.
+- **Respect TA Guidelines**: Avoid DMs; ask questions in public channels.
 
-### Bounty Pool
-- **10 Lakhs INR ($12,000)**: Rewards for achievements in live classes, platform enhancements, and noteworthy open-source contributions.
+---
 
-### How to Excel in the Cohort
-1. **Engage with Bounties** aggressively.
-2. **Share your journey** and let others know what you’re building.
-3. **Support Fellow Learners**: Help others with doubts, especially beginners.
-4. **Contribute to Open Source**: Focus on GSoC projects and gain experience.
-5. **Stay Focused**: Go week-by-week, prioritizing current learning goals.
+## Links to Bookmark
 
-### FAQs
-- **Will classes be recorded?** Yes, recordings are available about 2 hours after class.
-- **Are there live classes on weekdays?** Yes, occasionally, usually later in the evening (8-9 PM).
-- **Website for classes?** Access videos and content on [app.100xdevs.com](https://app.100xdevs.com).
-- **Help others** by answering beginner questions and sharing your knowledge.
-- **Referrals** are offered to top-performing participants.
+1. **Zoom Link**: Check your email.
+2. **Course Content**: [100xDevs Platform](https://app.100xdevs.com/).
+3. **Discord**: Primary channel for doubt-solving and announcements.
 
-### Overview of the Next Two Weeks
-- **Week 0 (Offline)**: HTML/CSS Basics, landing page assignment.
-- **Week 1**:
-   - **Orientation and Live Class**: JavaScript basics, async concepts.
-   - **Offline Content**: Git/GitHub and Node.js setup.
-- **Week 2**:
-   - **Live**: Node.js runtime, HTTP, Express, File system DBs.
-   - **Offline**: DOM basics and manipulation.
+---
 
-This cohort is designed to be intensive, interactive, and foundational, especially for building a strong skill set in full-stack development and positioning for opportunities like GSoC, open-source contributions, and job placements. 
+## Bounty Pool
+
+- **Total Pool**: ₹10 Lakhs ($12,000).
+- **Distribution**: Rewards are for live class participation, platform contributions, and notable open-source work.
+
+---
+
+## Tips for Success
+
+1. **Bounties**: Engage actively.
+2. **Publicly Share Work**: Showcase projects on social media.
+3. **Support Peers**: Help fellow learners, especially those facing challenges.
+4. **Focus on GSoC Projects**: Prioritize GSoC contributions in open-source communities.
+5. **Stay Focused**: Progress through the cohort week-by-week.
+
+---
+
+## Outstanding Cohort Alumni
+
+- Proactively coded and shared their progress.
+- Built personal projects and shared them.
+- Secured freelance opportunities on platforms like Upwork.
+- Made impactful contributions to open-source communities.
+
+---
+
+## Upcoming Schedule
+
+### Week 0:
+- **Offline**: HTML/CSS basics - Landing page assignment.
+
+### Week 1:
+- **Orientation**.
+- **Live**: JavaScript basics, async concepts, practice problems.
+- **Offline**: Git/GitHub, Node.js installation.
+
+### Week 2:
+- **Live**: Node.js fundamentals, HTTP basics, WebSockets, Express.
+- **Offline**: DOM manipulation basics.
+
+---
+
+## FAQs
+
+1. **Recording Availability**: Yes, accessible within 2-3 hours after class.
+2. **Weekday Live Classes**: Advanced topics are covered on some weekdays (8-9 PM).
+3. **Video Access**: Visit [100xDevs Platform](https://app.100xdevs.com/) using your credentials.
+4. **Helping Peers**: Support others on Discord, especially beginners.
+5. **Referrals**: Top 5% performers will be recommended to companies. Aim for GSoC for established opportunities.
+
+---
+
