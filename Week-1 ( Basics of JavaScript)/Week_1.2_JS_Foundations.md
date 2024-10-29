@@ -29,6 +29,24 @@ A compiler is a specialized program that translates source code written in a hig
 - Step 2:- Complile code
 - Step 3 :- Run the code (put it in ram)
 
+Here are some well-known examples of compilers:
+
+1. **GCC (GNU Compiler Collection)** - A popular compiler for languages like C, C++, Objective-C, Fortran, and others. It is widely used in Unix-based systems and is part of the GNU Project.
+
+2. **Clang** - An alternative to GCC, Clang is a compiler for C, C++, and Objective-C languages and is part of the LLVM project. It’s known for providing fast compilation times and excellent diagnostics.
+
+3. **Microsoft Visual C++ Compiler** - A compiler provided by Microsoft for C and C++ programming as part of Visual Studio. It is commonly used on Windows platforms.
+
+4. **Java Compiler (javac)** - This compiler is part of the Java Development Kit (JDK) and compiles Java source code into bytecode, which can be executed on the Java Virtual Machine (JVM).
+
+5. **Intel C++ Compiler (ICC)** - A compiler optimized for Intel processors, often used in high-performance computing due to its optimizations and compatibility with Intel hardware.
+
+6. **Swift Compiler** - A compiler for the Swift programming language, used primarily for iOS and macOS app development. It is integrated into Apple’s Xcode IDE.
+
+7. **Kotlin Compiler** - Compiles Kotlin code to Java bytecode, which can run on the JVM, or to JavaScript and native binaries for cross-platform applications.
+
+8. **PyInstaller and Nuitka (for Python)** - These aren’t traditional compilers in the sense of creating machine code, but they allow Python code to be packaged into standalone executables.
+
 #### What is Interprter
 Interpreted languages are programming languages where the source code is directly executed line-by-line by an interpreter without the need for a separate compilation step. Instead of compiling the entire code into machine code before execution (as in compiled languages), an interpreter reads and executes the code statement by statement in real-time.
 
