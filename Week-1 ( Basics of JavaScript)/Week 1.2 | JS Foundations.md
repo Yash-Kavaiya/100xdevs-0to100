@@ -1,3 +1,5 @@
+# Week 1.2 | JS Foundation
+
 ## Why Language 
 
 1. Languages are used to write applications
@@ -192,6 +194,119 @@ for (let i = 0; i < 5; i++) {
 ```
 
 These JavaScript fundamentals - variable declarations, data types, conditional statements (`if`/`else`), and loops (`for` loops) - are foundational concepts used extensively in JavaScript programming to create logic, manipulate data, and control the flow of execution within programs.
+
+
+Here are the JavaScript code examples for each of your requests:
+
+### 1. Greet a Person Given Their First and Last Name
+This program takes the user's first and last name and displays a greeting message.
+
+```javascript
+function greetPerson(firstName, lastName) {
+    console.log(`Hello, ${firstName} ${lastName}!`);
+}
+
+// Example Usage
+greetPerson("John", "Doe");
+```
+
+### 2. Greet a Person Based on Their Gender
+This program greets a person based on the provided gender using an `if-else` statement.
+
+```javascript
+function greetByGender(name, gender) {
+    if (gender.toLowerCase() === "male") {
+        console.log(`Hello Mr. ${name}!`);
+    } else if (gender.toLowerCase() === "female") {
+        console.log(`Hello Ms. ${name}!`);
+    } else {
+        console.log(`Hello ${name}!`);
+    }
+}
+
+// Example Usage
+greetByGender("Alex", "male");
+greetByGender("Sarah", "female");
+greetByGender("Taylor", "other");
+```
+
+### 3. Program that Counts from 0 to 1000 and Prints Each Number
+This program uses a `for` loop to print numbers from 0 to 1000.
+
+```javascript
+for (let i = 0; i <= 1000; i++) {
+    console.log(i);
+}
+```
+
+
+Here’s the updated code using Indian names in the examples:
+
+### 1. Program to Print All Even Numbers in an Array
+
+```javascript
+function printEvenNumbers(arr) {
+    arr.forEach(num => {
+        if (num % 2 === 0) {
+            console.log(num);
+        }
+    });
+}
+
+// Example Usage
+printEvenNumbers([11, 22, 33, 44, 55, 66, 77, 88, 99, 100]);
+```
+
+### 2. Program to Print the Biggest Number in an Array
+
+```javascript
+function findBiggestNumber(arr) {
+    let max = arr[0];
+    arr.forEach(num => {
+        if (num > max) {
+            max = num;
+        }
+    });
+    console.log(`The biggest number is: ${max}`);
+}
+
+// Example Usage
+findBiggestNumber([3, 71, 27, 91, 12, 52, 15, 43]);
+```
+
+### 3. Program to Print First Names of All Male People in a Complex Object
+
+```javascript
+const people = [
+    { firstName: "Rajesh", lastName: "Patel", gender: "male" },
+    { firstName: "Anita", lastName: "Desai", gender: "female" },
+    { firstName: "Vikram", lastName: "Singh", gender: "male" },
+    { firstName: "Priya", lastName: "Rao", gender: "female" }
+];
+
+function printMaleFirstNames(peopleArray) {
+    peopleArray.forEach(person => {
+        if (person.gender === "male") {
+            console.log(person.firstName);
+        }
+    });
+}
+
+// Example Usage
+printMaleFirstNames(people);
+```
+
+### 4. Program to Reverse All Elements of an Array
+
+```javascript
+function reverseArray(arr) {
+    const reversedArr = arr.reverse();
+    console.log(reversedArr);
+}
+
+// Example Usage
+reverseArray(["Ajay", "Vijay", "Sunita", "Rekha", "Pooja", "Ramesh", "Sneha"]);
+```
 
 ## ES6+ Features
 
