@@ -308,6 +308,314 @@ function reverseArray(arr) {
 reverseArray(["Ajay", "Vijay", "Sunita", "Rekha", "Pooja", "Ramesh", "Sneha"]);
 ```
 
+### 1. Function to Find the Sum of Two Numbers
+
+This function takes two numbers as arguments and returns their sum.
+
+```javascript
+function findSum(num1, num2) {
+    return num1 + num2;
+}
+
+// Example Usage
+const sum = findSum(10, 15); // 25
+```
+
+### 2. Function to Display the Sum in a Pretty Format
+
+This function takes the sum as an argument and displays it in a formatted style.
+
+```javascript
+function displaySumPretty(sum) {
+    console.log(`The sum of the two numbers is: ${sum}`);
+}
+
+// Example Usage
+displaySumPretty(sum); // "The sum of the two numbers is: 25"
+```
+
+### 3. Function to Print the Sum in Passive Tense
+
+This function takes the sum as an argument and displays it in a passive voice format.
+
+```javascript
+function displaySumPassive(sum) {
+    console.log(`The result has been calculated as: ${sum}`);
+}
+
+// Example Usage
+displaySumPassive(sum); // "The result has been calculated as: 25"
+```
+
+### Full Program
+
+To combine everything into one full example:
+
+```javascript
+function findSum(num1, num2) {
+    return num1 + num2;
+}
+
+function displaySumPretty(sum) {
+    console.log(`The sum of the two numbers is: ${sum}`);
+}
+
+function displaySumPassive(sum) {
+    console.log(`The result has been calculated as: ${sum}`);
+}
+
+// Example Usage
+const sum = findSum(10, 15);
+displaySumPretty(sum);
+displaySumPassive(sum);
+```
+`top` and `htop` are popular command-line tools for monitoring system performance, particularly in Unix-like operating systems such as Linux and macOS. Both tools provide real-time information about system processes, CPU, memory usage, and more. Here’s a closer look at each:
+
+---
+
+### 1. `top`
+`top` is a standard command-line utility that provides a dynamic view of system processes. By default, it shows processes sorted by CPU usage, with the most CPU-intensive processes listed at the top.
+
+#### Key Features of `top`
+- **Real-Time System Monitoring**: Displays CPU and memory usage, load averages, uptime, and swap usage.
+- **Process Monitoring**: Lists processes with details like PID (process ID), user, priority, memory usage, and CPU percentage.
+- **Process Management**: Allows you to kill processes by entering the process ID (PID) directly from the interface.
+- **Customizable**: You can change the sort order (by memory usage, PID, etc.), and adjust the update frequency by modifying the settings within the tool.
+
+#### Common Commands in `top`
+- **`q`** - Quit the `top` interface.
+- **`k`** - Kill a process by entering its PID.
+- **`h`** - View help information for more commands.
+- **`M`** - Sort processes by memory usage.
+- **`P`** - Sort processes by CPU usage (default).
+
+#### Limitations of `top`
+While `top` provides essential data, its interface is somewhat limited and lacks the modern interactive features that some users prefer. This is where `htop` comes in as a more feature-rich alternative.
+
+---
+
+### 2. `htop`
+`htop` is an enhanced, interactive version of `top`. It offers a more user-friendly interface, often with color-coding and an easier-to-navigate layout.
+
+#### Key Features of `htop`
+- **Visual Interface**: `htop` uses colors to represent different types of system usage, making it more visually appealing and easier to read than `top`.
+- **Easy Process Navigation**: You can scroll through the list of processes both vertically and horizontally, which is useful when examining detailed information.
+- **Customizable Display**: Allows you to change what information is shown, choose sorting options, and configure the display to fit your preferences.
+- **Process Management**: Similar to `top`, but `htop` makes it easier to kill, renice, or search for processes interactively.
+- **Extended Information**: `htop` provides additional details, such as real-time graphical bars for CPU, memory, and swap usage.
+
+#### Common Commands in `htop`
+- **`F3`** - Search for a specific process by name.
+- **`F5`** - Display processes in a tree structure to view parent-child relationships.
+- **`F6`** - Sort processes by a chosen field, such as CPU or memory usage.
+- **`F9`** - Kill a selected process.
+- **`F10`** - Quit `htop`.
+
+#### Advantages of `htop` over `top`
+- More interactive and visually intuitive, making it easier for beginners and experts alike.
+- Supports mouse input, so you can scroll, kill processes, and interact with elements directly.
+- Displays more detailed information on memory usage, including buffers and cached memory, which `top` does not always show by default.
+
+#### Limitations of `htop`
+While `htop` provides a lot of functionality, it is not available by default on all systems and may need to be installed. Additionally, it uses slightly more system resources than `top`.
+
+---
+
+### Summary
+- **`top`** is a standard, lightweight monitoring tool available by default on most Unix-like systems. It’s simple and effective for quick process monitoring.
+- **`htop`** is an advanced, visually enhanced alternative to `top`, with a customizable and interactive interface suitable for more in-depth monitoring.
+
+Both tools are valuable for system administrators, developers, and power users looking to monitor and manage system performance efficiently.
+
+Here's a comparison table to clarify the differences between **Synchronous** and **Asynchronous** execution in JavaScript:
+
+| Feature                         | Synchronous                                   | Asynchronous                                      |
+|---------------------------------|-----------------------------------------------|---------------------------------------------------|
+| **Definition**                  | Executes code sequentially, one line after the other. Each line waits for the previous line to complete. | Executes code without waiting; can run multiple tasks concurrently, allowing some tasks to continue while waiting for others. |
+| **Blocking Behavior**           | Blocking - each task waits for the previous task to finish before starting. | Non-blocking - tasks can start and continue even if previous tasks haven't completed. |
+| **Execution Order**             | Deterministic; the code is executed in the order written. | Non-deterministic; the order of execution depends on task completion. |
+| **Examples**                    | Basic arithmetic, string operations, and loops. | SetTimeout, HTTP requests (fetch), reading files with Promises or async functions. |
+| **Performance Impact**          | Can slow down the application, especially with long-running tasks, as it blocks other code from running. | Improves application performance by freeing up resources while waiting for tasks to complete. |
+| **Coding Style**                | Simple and easy to read, as it follows a straightforward, top-down approach. | Requires callbacks, Promises, or async/await syntax to handle asynchronous operations, which can be more complex to write and understand. |
+| **Error Handling**              | Errors are immediate and stop further execution if not caught. | Errors are often handled in callbacks, `.catch` for Promises, or with `try/catch` in async/await functions. |
+| **Use Cases**                   | When operations are short and need to execute in order, like mathematical calculations or simple functions. | When tasks involve time delays or waiting, such as API calls, file I/O, or database operations. |
+
+In JavaScript, the **Event Loop** and **Callback Queue** help manage asynchronous operations, making it a powerful language for both synchronous and asynchronous code execution.
+
+In JavaScript, a **callback** is a function passed as an argument to another function and executed after some kind of event or operation has completed. Callbacks are widely used in asynchronous programming to manage tasks that do not finish immediately, allowing JavaScript to handle long-running operations without blocking the execution of other code.
+
+### Key Concepts of Callbacks
+
+1. **Function as a First-Class Citizen**: In JavaScript, functions are "first-class citizens," meaning they can be treated like any other variable. You can pass functions as arguments, return them from other functions, and assign them to variables.
+
+2. **Synchronous vs. Asynchronous Callbacks**:
+   - **Synchronous Callbacks**: Executed immediately, as part of a regular function execution. These callbacks are used when you want to perform operations in a specific order without delays.
+   - **Asynchronous Callbacks**: Executed after a specific event or operation completes, often without blocking other code from executing. These are typical in situations like network requests, timers, or reading files.
+
+3. **How Callbacks Work**:
+   - A callback function is passed to another function.
+   - The main function executes and, once it reaches the callback point, invokes the callback function.
+   - In asynchronous cases, the main function might continue executing without waiting for the callback.
+
+### Examples of Callbacks in JavaScript
+
+#### 1. Simple Synchronous Callback
+
+Here's a synchronous example where a function calls another function after performing an operation:
+
+```javascript
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+function getUserInput(callback) {
+    const name = "Ravi";  // Simulated user input
+    callback(name);
+}
+
+// Example Usage
+getUserInput(greet);
+```
+
+In this case:
+- `getUserInput` receives the function `greet` as a callback.
+- Inside `getUserInput`, the `greet` function is called with the name `"Ravi"`.
+
+#### 2. Asynchronous Callback with `setTimeout`
+
+Here’s an example using an asynchronous callback with `setTimeout`, which delays execution of the callback function:
+
+```javascript
+function displayMessage() {
+    console.log("This message is displayed after 2 seconds.");
+}
+
+setTimeout(displayMessage, 2000);  // Executes displayMessage after 2 seconds
+```
+
+- `setTimeout` is passed `displayMessage` as a callback function.
+- `setTimeout` waits 2 seconds and then invokes `displayMessage`.
+
+#### 3. Asynchronous Callback in HTTP Requests (Example with Fetch API)
+
+Using callbacks with HTTP requests is common in JavaScript for handling data after a request completes:
+
+```javascript
+function fetchData(callback) {
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
+        .then(data => callback(data))
+        .catch(error => console.log("Error:", error));
+}
+
+function displayData(data) {
+    console.log("Data fetched:", data);
+}
+
+// Example Usage
+fetchData(displayData);
+```
+
+Here:
+- `fetchData` initiates an HTTP request and calls `displayData` (passed as a callback) with the data once the request is successful.
+
+### Callback Challenges: Callback Hell
+
+As you nest multiple callbacks, readability and maintainability can suffer. This phenomenon is often referred to as **callback hell**:
+
+```javascript
+function firstTask(callback) {
+    setTimeout(() => {
+        console.log("First task done.");
+        callback();
+    }, 1000);
+}
+
+function secondTask(callback) {
+    setTimeout(() => {
+        console.log("Second task done.");
+        callback();
+    }, 1000);
+}
+
+function thirdTask() {
+    setTimeout(() => {
+        console.log("Third task done.");
+    }, 1000);
+}
+
+// Nested callbacks
+firstTask(() => {
+    secondTask(() => {
+        thirdTask();
+    });
+});
+```
+
+In such cases, managing nested callbacks becomes difficult, and errors are hard to debug.
+
+### Solutions to Callback Hell: Promises and Async/Await
+
+To handle asynchronous code more cleanly, JavaScript introduced **Promises** and later **async/await** syntax, which make chaining asynchronous actions easier and code more readable.
+
+#### Using Promises
+
+```javascript
+function firstTask() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("First task done.");
+            resolve();
+        }, 1000);
+    });
+}
+
+function secondTask() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Second task done.");
+            resolve();
+        }, 1000);
+    });
+}
+
+function thirdTask() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Third task done.");
+            resolve();
+        }, 1000);
+    });
+}
+
+// Chaining Promises
+firstTask()
+    .then(() => secondTask())
+    .then(() => thirdTask());
+```
+
+#### Using Async/Await
+
+```javascript
+async function executeTasks() {
+    await firstTask();
+    await secondTask();
+    await thirdTask();
+}
+
+executeTasks();
+```
+
+With **async/await**, the code becomes simpler, looks synchronous, and avoids the deep nesting of callbacks.
+
+### Summary
+- **Callbacks** are functions passed as arguments to other functions, especially useful in handling asynchronous operations.
+- **Synchronous callbacks** execute immediately, while **asynchronous callbacks** execute after a specific event completes.
+- **Callback hell** can make code difficult to read; **Promises** and **async/await** offer solutions to handle asynchronous code more cleanly.
+- **Best practices**: Use named functions instead of anonymous ones for callbacks, limit callback nesting, and leverage Promises or async/await for complex asynchronous flows.
+
+
+
 ## ES6+ Features
 
 ### `let` and `const`
