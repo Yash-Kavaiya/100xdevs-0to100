@@ -1,4 +1,4 @@
-# Bash and Terminal
+# Week 2.3 | Bash and terminal
  - terminal is nothing but another interface to do things on your machine
 
 1. **pwd (Print Working Directory):**
