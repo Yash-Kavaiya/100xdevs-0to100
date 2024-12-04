@@ -1,10 +1,10 @@
-# 100xDevs Cohort 2.0 Orientation - Overview
+# 100xDevs Cohort 2.0 Orientation - Overview 🎓
 
 Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the context for the journey ahead, especially for beginners. We'll go over high-level concepts, program structure, and expectations, and have an AMA session. Tomorrow, we start coding!
 
 ---
 
-## Cohort Goals
+## Cohort Goals 🎯
 
 1. **Master Full Stack Development**: Understand how development is done at startups and good companies.
 2. **Best Practices in Coding and Deployment**: Learn industry standards for writing and deploying code.
@@ -14,7 +14,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Learning Path & Commitment Levels
+## Learning Path & Commitment Levels 📚
 
 ### Beginner (Complete Beginner - Never Coded)
 - **Commitment**: 20-25 hours/week.
@@ -35,7 +35,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Essential Actions for Today
+## Essential Actions for Today 📝
 
 1. **Join the Discord Channel**: Connect with peers and form sub-groups.
 2. **Access Course Videos**: Visit [100xDevs Platform](https://app.100xdevs.com/) (ensure DRM is enabled).
@@ -46,7 +46,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Class Schedule
+## Class Schedule 📅
 
 1. **Weekend Zoom Classes**: Saturdays/Sundays 7-9 PM. Focus on complex topics.
 2. **Assignments**: Weekly tasks are posted on Mondays to reinforce concepts.
@@ -57,7 +57,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Teaching Assistant (TA) Support
+## Teaching Assistant (TA) Support 👩‍🏫👨‍🏫
 
 - Each Discord sub-group has 2 dedicated TAs.
 - **Ask Smart**: Google and check documentation first.
@@ -65,7 +65,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Links to Bookmark
+## Links to Bookmark 🔖
 
 1. **Zoom Link**: Check your email.
 2. **Course Content**: [100xDevs Platform](https://app.100xdevs.com/).
@@ -73,14 +73,14 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Bounty Pool
+## Bounty Pool 💰
 
 - **Total Pool**: ₹10 Lakhs ($12,000).
 - **Distribution**: Rewards are for live class participation, platform contributions, and notable open-source work.
 
 ---
 
-## Tips for Success
+## Tips for Success 🌟
 
 1. **Bounties**: Engage actively.
 2. **Publicly Share Work**: Showcase projects on social media.
@@ -90,7 +90,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Outstanding Cohort Alumni
+## Outstanding Cohort Alumni 🏆
 
 - Proactively coded and shared their progress.
 - Built personal projects and shared them.
@@ -99,7 +99,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## Upcoming Schedule
+## Upcoming Schedule 📆
 
 ### Week 0:
 - **Offline**: HTML/CSS basics - Landing page assignment.
@@ -115,7 +115,7 @@ Welcome to Cohort 2.0! Today's session is a one-hour orientation to set the cont
 
 ---
 
-## FAQs
+## FAQs ❓
 
 1. **Recording Availability**: Yes, accessible within 2-3 hours after class.
 2. **Weekday Live Classes**: Advanced topics are covered on some weekdays (8-9 PM).

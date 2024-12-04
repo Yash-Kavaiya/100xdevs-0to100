@@ -10,47 +10,33 @@ HTML tags are the building blocks used to structure content on web pages. They a
 
 Here are some of the most popular HTML tags:
 
-1. `<html>`: Defines the root of an HTML document.
-2. `<head>`: Contains meta-information about the HTML document, such as title, metadata, links to stylesheets, etc.
-3. `<title>`: Sets the title of the HTML document, which appears in the browser's title bar or tab.
-4. `<body>`: Contains the main content of the HTML document visible to users.
-5. `<h1>` to `<h6>`: Headings used to define different levels of headings, with `<h1>` being the highest level and `<h6>` the lowest.
-6. `<p>`: Defines a paragraph of text.
-7. `<a>`: Creates hyperlinks to other web pages or resources.
-8. `<img>`: Embeds an image in the webpage.
-9. `<ul>`: Defines an unordered list.
-10. `<ol>`: Defines an ordered list.
-11. `<li>`: Defines list items within `<ul>` or `<ol>` lists.
-12. `<div>`: Defines a division or a section in an HTML document, used for layout and grouping content.
-13. `<span>`: Inline element used for styling or grouping text.
-14. `<table>`: Defines a table.
-15. `<tr>`: Defines a table row.
-16. `<td>`: Defines a table cell.
+| Tag | Description |
+|-----|-------------|
+| `<html>` | Defines the root of an HTML document. |
+| `<head>` | Contains meta-information about the HTML document, such as title, metadata, links to stylesheets, etc. |
+| `<title>` | Sets the title of the HTML document, which appears in the browser's title bar or tab. |
+| `<body>` | Contains the main content of the HTML document visible to users. |
+| `<h1>` to `<h6>` | Headings used to define different levels of headings, with `<h1>` being the highest level and `<h6>` the lowest. |
+| `<p>` | Defines a paragraph of text. |
+| `<a>` | Creates hyperlinks to other web pages or resources. |
+| `<img>` | Embeds an image in the webpage. |
+| `<ul>` | Defines an unordered list. |
+| `<ol>` | Defines an ordered list. |
+| `<li>` | Defines list items within `<ul>` or `<ol>` lists. |
+| `<div>` | Defines a division or a section in an HTML document, used for layout and grouping content. |
+| `<span>` | Inline element used for styling or grouping text. |
+| `<table>` | Defines a table. |
+| `<tr>` | Defines a table row. |
+| `<td>` | Defines a table cell. |
 
 ### `<div>` vs. `<span>` 📐
 
 `<div>` and `<span>` are both HTML elements used for structuring and styling content, but they have different characteristics and purposes:
 
-1. **`<div>`**:
-   - **Block-level Element**: `<div>` is a block-level element, meaning it typically starts on a new line and takes up the full width available by default.
-   - **Grouping Content**: It is commonly used to group and divide sections of content on a web page. It's often used for layout purposes and helps in structuring the layout of a webpage.
-   - **Allows Block Elements**: `<div>` can contain other block-level and inline elements, including other `<div>` elements, headings, paragraphs, lists, etc.
-   - **Example**:
-     ```html
-     <div>
-         <h1>Heading</h1>
-         <p>Paragraph</p>
-     </div>
-     ```
-
-2. **`<span>`**:
-   - **Inline Element**: `<span>` is an inline-level element, meaning it does not start on a new line and takes up only the necessary width.
-   - **Styling and Inline Markup**: It is often used to apply styles or markup to a specific part of text within a larger block of content without affecting the layout.
-   - **Allows Inline Elements**: `<span>` can contain other inline elements, such as text, images, links, etc.
-   - **Example**:
-     ```html
-     <p>This is a <span style="color: red;">red</span> word.</p>
-     ```
+| Element | Description |
+|---------|-------------|
+| `<div>` | **Block-level Element**: `<div>` is a block-level element, meaning it typically starts on a new line and takes up the full width available by default. **Grouping Content**: It is commonly used to group and divide sections of content on a web page. It's often used for layout purposes and helps in structuring the layout of a webpage. **Allows Block Elements**: `<div>` can contain other block-level and inline elements, including other `<div>` elements, headings, paragraphs, lists, etc. |
+| `<span>` | **Inline Element**: `<span>` is an inline-level element, meaning it does not start on a new line and takes up only the necessary width. **Styling and Inline Markup**: It is often used to apply styles or markup to a specific part of text within a larger block of content without affecting the layout. **Allows Inline Elements**: `<span>` can contain other inline elements, such as text, images, links, etc. |
 
 ### `<table>` 📊
 
