@@ -2,8 +2,6 @@
 
 ## Complete Guide to Backend Security Mechanisms
 
----
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -50,8 +48,6 @@ These become crucial when:
 - You gain attention from malicious actors
 - Your service handles sensitive operations (payments, authentication)
 - You experience high traffic events (ticket sales, NFT mints)
-
----
 
 ## Rate Limiting
 
@@ -143,24 +139,8 @@ flowchart LR
 
 Rate limiting can be applied based on different identifiers:
 
-```mermaid
-flowchart TD
-    A[Rate Limit Based On] --> B[IP Address]
-    A --> C[User ID]
-    A --> D[API Key]
-    A --> E[Session Token]
-    
-    B --> B1[Most Common]
-    B --> B2["⚠️ Shared IPs issue"]
-    B --> B3[College networks]
-    B --> B4[Corporate proxies]
-    
-    C --> C1[More precise]
-    C --> C2[Requires authentication]
-    
-    D --> D1[API consumers]
-    D --> D2[Third-party integrations]
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f3e67c3e-c971-4ba5-b351-b7425dd94406" />
+
 
 #### IP-Based Rate Limiting Considerations
 
@@ -173,33 +153,8 @@ In environments like:
 
 Multiple users share the same public IP. If one user triggers rate limits, everyone gets blocked.
 
-```
-Example: IIT Campus Network
-┌────────────────────────────────────────────┐
-│           Campus Network                    │
-│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐          │
-│  │User1│ │User2│ │User3│ │User4│          │
-│  └──┬──┘ └──┬──┘ └──┬──┘ └──┬──┘          │
-│     │       │       │       │              │
-│     └───────┴───────┴───────┘              │
-│                  │                          │
-│           ┌──────┴──────┐                  │
-│           │   Proxy     │                  │
-│           │  Server     │                  │
-│           └──────┬──────┘                  │
-└──────────────────┼─────────────────────────┘
-                   │
-                   ▼
-            Public IP: 103.x.x.x
-                   │
-                   ▼
-           ┌──────────────┐
-           │   Website    │
-           │   Backend    │
-           └──────────────┘
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/2d6892df-19c5-4c1f-8687-1ced099fd9b8" />
 
-If User1 exceeds limits → All users blocked!
-```
 
 ### Implementation Levels
 
@@ -237,8 +192,6 @@ flowchart TD
 | **Flexibility** | High (per-endpoint control) | Medium |
 | **Server Load** | Higher (processes all requests) | Lower (early rejection) |
 | **Cost** | Free | Often paid services |
-
----
 
 ## Common Attack Vectors
 
@@ -320,8 +273,6 @@ $$
 $$
 
 This demonstrates why aggressive rate limiting on OTP endpoints is critical!
-
----
 
 ## Practical Implementation
 
